@@ -9,7 +9,8 @@ public class User implements Serializable {
     public long id;
     public String firstname, name;
 
-    public User() {}
+    public User() {
+    }
 
     public User(String firstname, String name) {
         this.firstname = firstname;
