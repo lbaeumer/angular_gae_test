@@ -12,7 +12,7 @@ import de.lui.dto.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.GET;
-import javax.ws.rs.PUT;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
@@ -53,7 +53,7 @@ public class UserResources {
         return Response.ok(l).build();
     }
 
-    @PUT
+    @POST
     @Path("/insert")
     @Produces("application/json; charset=UTF-8")
     public Response insertUser(@Context HttpServletRequest httpRequest, User user) {
